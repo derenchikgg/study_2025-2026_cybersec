@@ -1,6 +1,6 @@
 project:
   title: "report"
-  output-dir: "_output"
+  output-dir: "report (pdf&docx)"
 
 standalone: true
 self-contained: true
@@ -11,15 +11,6 @@ number-sections: true
 toc: true
 toc-title: "Содержание"
 toc-depth: 2
-## Crossref customization
-crossref:
-  lof-title: "Список иллюстраций"
-  lot-title: "Список таблиц"
-  lol-title: "Листинги"
-## Bibliography
-bibliography:
-  - bib/cite.bib
-csl: _resources/csl/gost-r-7-0-5-2008-numeric.csl
 ## Formats
 format:
 ### Pdf output format
@@ -28,8 +19,8 @@ format:
     number-sections: true
     colorlinks: false
     toc-depth: 2
-    lof: true # List of figures
-    lot: true # List of tables
+    lof: false # List of figures
+    lot: false # List of tables
 #### Document
     documentclass: scrreprt
     papersize: a4
@@ -38,13 +29,6 @@ format:
 #### Language
     babel-lang: russian
     babel-otherlangs: english
-#### Biblatex
-    cite-method: biblatex
-    # biblio-style: gost-numeric
-    biblatexoptions:
-      - backend=biber
-      - langhook=extras
-      - autolang=other*
 #### Misc options
     csquotes: true
     indent: true
